@@ -21,7 +21,7 @@ var paths = {
   scss: 'src/scss/',
   css: 'src/css/',
   dist: 'dist/',
-  images: 'public/assets/images',
+  images: 'src/assets/images',
 };
 
 /*********
@@ -32,7 +32,7 @@ var paths = {
 
 // Compile sass and generate Source Map
 gulp.task('compileSass', function() {
-  return gulp.src(paths.scss + 'main.scss')
+  return gulp.src(paths.scss + 'styles.scss')
     .pipe(maps.init())
     .pipe(sass())
     .pipe(prefix({
@@ -68,7 +68,7 @@ gulp.task('serve', ['compileSass'], function() {
 
 // 'Clean up' the dist folder
 gulp.task("clean", function () {
-  del(['dist', 'public']);
+  del(['dist']);
 });
 
 gulp.task("html", ["compileSass"], function () {
@@ -81,8 +81,16 @@ gulp.task("html", ["compileSass"], function () {
 });
 
 gulp.task("build", ["clean", "html"], function () {
-  return gulp.src("./src/images/**", { base: 'src' } )
+  return gulp.src("src/assets/images/**", { base: "src" } )
     .pipe(gulp.dest(paths.dist));
+});
+
+gulp.task("serve:dist", ["build"], function() {
+  browserSync.init({
+    server: {
+      baseDir: "./dist"
+    }
+  })
 });
 
 /*********
