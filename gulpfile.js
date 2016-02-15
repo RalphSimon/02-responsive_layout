@@ -38,7 +38,7 @@ gulp.task('compileSass', function() {
     .pipe(prefix({
       browsers: ['> 5%']
     }))
-    .pipe(maps.write())
+    .pipe(maps.write('./maps'))
     .pipe(gulp.dest(paths.css))
     .pipe(browserSync.stream());
 });
@@ -68,7 +68,7 @@ gulp.task('serve', ['compileSass'], function() {
 
 // 'Clean up' the dist folder
 gulp.task("clean", function () {
-  del(['dist']);
+  del(['dist', "src/css"]);
 });
 
 gulp.task("html", ["compileSass"], function () {
