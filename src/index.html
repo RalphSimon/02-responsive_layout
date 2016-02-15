@@ -7,7 +7,7 @@
 
     <!-- CDN delivered assets here -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,700,900,400italic' rel='stylesheet' type='text/css'>
 
     <!-- CSS in src folder here -->
     <!-- build:css css/styles.css -->
@@ -15,22 +15,23 @@
     <!-- endbuild -->
   </head>
 
-  <body>
+  <body class="site">
+    <h1 class="student-name">Ralph Simon</h1>
     <nav class="main-nav">
       <a href="#" class="main-nav--item">Home</a>
       <a href="#" class="main-nav--item">Portfolio</a>
       <a href="#" class="main-nav--item">Contact</a>
     </nav>
 
-    <header class="hero-content">
-      <section class="profile-info">
-        <p>Hey there! Welcome to my portfolio site. I just finished the TreeHouse Techdegree and here you'll find the results of all my hard work. I love developing for the web and I can't wait to put everything I've learned to good use!</p>
-      </section>
+    <header class="profile-banner">
+      <p class="profile-info">Hey there! Welcome to my portfolio site. I just finished the TreeHouse Techdegree and here you'll find the results of all my hard work. I love developing for the web and I can't wait to put everything I've learned to good use!</p>
 
-      <img src="assets/images/responsive-layout-profile.png" alt="An image of the developer of this page">
+      <div class="image-container">
+        <img src="assets/images/responsive-layout-profile.png" alt="An image of the developer of this page" class="profile-image">
+      </div>
     </header>
 
-    <main class="main-content" role="main">
+    <main class="main-content">
       <section class="latest-work">
         <h2 class="subheading">My latest work</h2>
         <ul class="latest-work--list">

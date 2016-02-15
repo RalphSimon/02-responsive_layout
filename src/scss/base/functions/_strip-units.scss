@@ -1,0 +1,10 @@
+// Strip the units of a value
+// First a value of zero or null is returned so units are stripped away.
+// To have the function return the value, it is divided by one.
+
+// The guyst @ ThoughtBot and (all others working on Bourbon) are super smart :)
+// Check out this function: https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_strip-units.scss
+
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}

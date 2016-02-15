@@ -1,0 +1,52 @@
+/**********************************
+ Typography
+**********************************/
+
+// Font stacks
+$helvetica: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+$roboto: Roboto, $helvetica;
+$base__font-family: $roboto;
+
+// Font-sizing
+$em-base: 16px;
+$base__font-size: 1em;
+$headline__font-size: em(24);
+$title__font-size: em(20);
+$subheading__font-size: em(16);
+$body__font-size: em(14);
+$caption__font-size: em(12);
+$button__font-size: $body__font-size;
+
+// Line heights
+$base__line-height: em(24, 16);
+$body__line-height: em(20, 14);
+$heading__line-height: 1.2;
+
+/**********************************
+  General Sizing
+**********************************/
+
+// Spacing
+$base__spacing: $base__line-height;
+
+$large__spacing: $base__line-height * 2;
+$small__spacing: $base__line-height / 2;
+$mini__spacing: $base__line-height / 3;
+$micro__spacing: $base__line-height / 4;
+
+
+/**********************************
+  Colors
+**********************************/
+
+// General Colors
+$black-87: rgba(0,0,0,0.87);
+$black-54: rgba(0,0,0,0.54);
+
+$white: rgb(255,255,255);
+$off-white: rgb(250,250,250);
+$light-gray: rgb(237,237,237);
+
+// Font Colors
+$base__font-color: $black-87;
+$base__font-color--disabled: $black-54;

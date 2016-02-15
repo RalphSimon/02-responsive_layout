@@ -1,0 +1,16 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 $small__spacing;
+}
+
+.main-nav--item {
+  flex: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $white;
+  padding: $small__spacing;
+  margin-bottom: $mini__spacing;
+}

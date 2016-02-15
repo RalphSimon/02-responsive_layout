@@ -1,0 +1,24 @@
+// Convert pixels to ems
+// Formula for calculating relative sizes:
+// ( target / context ) = result;
+// To get the result in ems return the function ( target / context ) * 1em
+
+// Target = pixel value
+// context = the base em value; 1em = 16px !default
+
+// See https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-em.scss
+// for a great implementation
+
+@function em($target, $context: $em-base) {
+  // Strip the units of the target and context entered
+  // so the function can return an em-based value
+
+  @if not unitless($target) {
+    $target: strip-units($target);
+  }
+
+  @if not unitless($context) {
+    $context: strip-units($context);
+  }
+  @return ( $target / $context ) * 1em;
+}
