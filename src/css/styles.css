@@ -33,9 +33,13 @@ html {
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.5;
+}
+
+p {
+  font-size: 0.875em;
 }
 
 a {
@@ -53,10 +57,31 @@ a:active {
   transition: color 0.3s;
 }
 
+.subheading {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2.5em auto;
+}
+
 
 /* Buttons */
 
 /* Lists */
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* Figures */
+figure {
+  margin: 0;
+}
 
 
 
@@ -104,6 +129,7 @@ a:active {
 .main-content {
   -webkit-flex: 1;
   flex: 1;
+  width: 100%;
 }
 
 
@@ -121,7 +147,7 @@ a:active {
 .main-nav--item,
 .main-nav--item:visited {
   color: rgba(0,0,0,0.87);
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -160,6 +186,53 @@ a:active {
   line-height: 1.7;
   text-align: center;
 }
+
+/***** Latest Work *****/
+.latest-work {
+  width: 100%;
+  background-color: #fff;
+}
+
+.latest-work--list {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+/*.latest-work--item {
+  padding: 0 1em;
+}*/
+
+.portfolio-item {
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.portfolio-image {
+  width: 100%;
+}
+
+.portfolio-caption {
+  padding: 0.625em 0.625em 0 0.625em;
+}
+
+.portfolio-caption > .title {
+  font-size: 1.125em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.portfolio-caption > .description {
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
 /******************
 
   MEDIA QUERIES
