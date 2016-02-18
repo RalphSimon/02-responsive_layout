@@ -78,7 +78,7 @@
     padding-bottom: 4em;
   }
 
-  .back-to-top {
+  .main-footer > .back-to-top {
     display: none;
   }
 

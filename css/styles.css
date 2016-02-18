@@ -63,6 +63,12 @@ a:active {
   margin: 2.5em auto;
 }
 
+/* Icons */
+.material-icons {
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+
 
 /* Buttons */
 
@@ -108,6 +114,7 @@ figure {
 .profile-banner,
 .main-content,
 .latest-work--list,
+.contact > span,
 .main-footer {
   display: -webkit-flex;
   -webkit-flex-wrap: no-wrap;
@@ -249,10 +256,13 @@ figure {
 }
 
 .contact > span {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 
   font-size: 1.125em;
+  color: rgba(0,0,0,0.87);
   text-align: center;
   margin-bottom: 0.875em;
 }
@@ -263,12 +273,14 @@ figure {
 .back-to-top,
 .back-to-top:link,
 .back-to-top:visited {
+  display: inline-block;
   font-weight: 600;
-  color: rgba(0,0,0,0.87);
   transition: color 0.4s;
+  margin-left: 1.25em;
 }
 
-.contact-link:hover,
+.contact > span:hover .contact-link,
+.contact > span:hover .material-icons,
 .back-to-top:hover {
   color: rgba(0,0,0,0.54);
   transition: color 0.3s;
