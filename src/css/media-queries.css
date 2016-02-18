@@ -1,0 +1,167 @@
+/******************
+
+  MEDIA QUERIES
+
+******************/
+
+/* Tablet */
+@media screen and (min-width: 48em) {
+  .site-header,
+  .profile-banner,
+  .main-content > section,
+  .main-footer > section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+
+  /***** Site Header *****/
+  .site-header {
+    padding-top: 2.5em;
+  }
+
+  .student-name {
+    margin: 0;
+  }
+
+  .main-nav {
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .main-nav--item {
+    background-color: transparent;
+  }
+
+  /***** Profile Banner *****/
+  .profile-banner {
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+
+    flex-direction: row;
+  }
+
+  .profile-info,
+  .image-container {
+    width: 48%;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+
+  .profile-image {
+    width: 100%;
+  }
+
+  /***** Profile Banner *****/
+  .latest-work--list {
+    -webkit-flex-direction: row;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .latest-work--item {
+    flex: 0 1 48%;
+  }
+
+  .main-footer {
+    padding-bottom: 4em;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-nav--item {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 2em;
+  }
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+  .site {
+    align-items: center;
+  }
+
+  .site-header,
+  .profile-banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-header,
+  .profile-banner,
+  .main-content > section,
+  .main-footer > section {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  /***** Site Header *****/
+  .site-header {
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .student-name,
+  .main-nav--item {
+    line-height: 1;
+  }
+
+  .main-nav {
+    -webkit-flex: 1;
+    -webkit-justify-content: space-between;
+
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main-nav--item {
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+  }
+
+  /***** Profile Banner *****/
+  .profile-banner {
+    padding: 1em 0;
+  }
+
+  .profile-info {
+    width: 57%;
+  }
+
+  .image-container {
+    width: 39%;
+  }
+
+  /***** Profile Banner *****/
+  .latest-work--item {
+    flex: 0 1 32%;
+  }
+}
