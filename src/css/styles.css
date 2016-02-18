@@ -75,10 +75,13 @@ a:active {
 
 ******************/
 
+/***** Primary Content Wrappers *****/
+
 .site,
 .main-content,
 .main-footer,
-.main-nav {
+.main-nav ,
+.profile-banner {
   display: -webkit-flex;
   -webkit-flex-wrap: no-wrap;
 
@@ -92,29 +95,27 @@ a:active {
   -webkit-flex-direction: column;
 }
 
-.main-content {
-  -webkit-flex: 1;
-  flex: 1;
-}
-
-/* Wrappers  */
 .site {
   width: 100%;
   min-height: 100vh;
   background-color: #FAFAFA;
 }
 
-/* Page header */
+.main-content {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+
+/***** Page header *****/
 .student-name {
   text-align: center;
 }
 
-/* Main navigation */
+/***** Main navigation *****/
 .main-nav {
   width: 100%;
   padding: 1em;
-  /*padding-left: 1em;
-  padding-right: 1em;*/
 }
 
 .main-nav--item,
@@ -135,7 +136,30 @@ a:active {
   transition: color 0.3;
 }
 
+/***** Profile Banner *****/
+.profile-banner {
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding: 1em;
+}
 
+.image-container {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.profile-image {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profile-info {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+}
 /******************
 
   MEDIA QUERIES
