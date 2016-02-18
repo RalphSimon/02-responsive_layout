@@ -169,7 +169,7 @@ figure {
   -webkit-flex-direction: column-reverse;
   flex-direction: column-reverse;
   width: 100%;
-  padding: 1em;
+  padding: 2em 1em;
 }
 
 .image-container {
