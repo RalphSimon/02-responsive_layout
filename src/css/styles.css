@@ -255,16 +255,46 @@ figure {
 
 .contact-link,
 .contact-link:link,
-.contact-link:visited {
+.contact-link:visited,
+.back-to-top,
+.back-to-top:link,
+.back-to-top:visited {
   font-weight: 600;
   color: rgba(0,0,0,0.87);
   transition: color 0.4s;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.back-to-top:hover {
   color: rgba(0,0,0,0.54);
   transition: color 0.3s;
 }
+
+/***** Main Footer *****/
+.main-footer {
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  padding: 2em 1em;
+}
+
+.student-name--footer,
+.back-to-top {
+  font-size: 1em;
+}
+
+.student-name--footer {
+  margin: 0;
+}
+
+.back-to-top {
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: none;
+}
+
+
 
 /******************
 
