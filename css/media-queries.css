@@ -56,7 +56,7 @@
   }
 
   .profile-image {
-    width: 100%;
+    width: 50%;
   }
 
   /***** Latest Work *****/
@@ -152,6 +152,7 @@
   /***** Profile Banner *****/
   .profile-banner {
     padding: 1em 0;
+    margin-bottom: 3em;
   }
 
   .profile-info {
@@ -160,6 +161,10 @@
 
   .image-container {
     width: 39%;
+  }
+
+  .profile-image {
+    width: 60%;
   }
 
   /***** Latest Work *****/
