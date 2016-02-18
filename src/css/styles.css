@@ -83,6 +83,7 @@ figure {
   margin: 0;
 }
 
+/* Utilities */
 
 
 /******************
@@ -130,6 +131,7 @@ figure {
   -webkit-flex: 1;
   flex: 1;
   width: 100%;
+  /*padding: 0 1em;*/
 }
 
 
@@ -182,7 +184,7 @@ figure {
 }
 
 .profile-info {
-  font-size: 1rem;
+  font-size: 1.125em;
   line-height: 1.7;
   text-align: center;
 }
@@ -231,7 +233,38 @@ figure {
   text-align: center;
 }
 
+/***** Contact Section *****/
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 0 1em;
+}
 
+.contact-links--wrapper {
+  padding-bottom:  3em;
+  border-bottom: 1px solid rgba(0,0,0,0.24);
+}
+
+.contact-links--wrapper > span {
+  display: block;
+  width: 100%;
+  font-size: 1.125em;
+  text-align: center;
+  margin-bottom: 0.875em;
+}
+
+.contact-link,
+.contact-link:link,
+.contact-link:visited {
+  font-weight: 600;
+  color: rgba(0,0,0,0.87);
+  transition: color 0.4s;
+}
+
+.contact-link:hover {
+  color: rgba(0,0,0,0.54);
+  transition: color 0.3s;
+}
 
 /******************
 
