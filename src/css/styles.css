@@ -104,10 +104,11 @@ figure {
 /***** Primary Content Wrappers *****/
 
 .site,
+.site-header,
+.main-nav,
+.profile-banner,
 .main-content,
-.main-footer,
-.main-nav ,
-.profile-banner {
+.main-footer {
   display: -webkit-flex;
   -webkit-flex-wrap: no-wrap;
 
@@ -115,8 +116,9 @@ figure {
 }
 
 .site,
-.main-content,
-.main-nav {
+.site-header,
+.main-nav,
+.main-content {
   flex-direction: column;
   -webkit-flex-direction: column;
 }
@@ -146,9 +148,7 @@ figure {
   padding: 1em;
 }
 
-.main-nav--item,
-.main-nav--item:visited {
-  color: rgba(0,0,0,0.87);
+.main-nav--item {
   font-size: 1.125em;
   font-weight: 900;
   text-align: center;
@@ -156,6 +156,11 @@ figure {
   background-color: #fff;
   padding: 0.625em 0;
   margin-bottom: 0.5em;
+}
+
+.main-nav--item,
+.main-nav--item:visited {
+  color: rgba(0,0,0,0.87);
   transition: color 0.4s;
 }
 
@@ -274,6 +279,9 @@ figure {
 .main-footer {
   -webkit-justify-content: space-between;
   -webkit-align-items: center;
+
+  justify-content: space-between;
+  align-items: center;
   padding: 2em 1em;
 }
 
@@ -303,5 +311,72 @@ figure {
 ******************/
 
 /* Tablet */
+@media screen and (min-width: 48em) {
+  .site-header {
+    padding-top: 2.5em;
+  }
+
+  .student-name {
+    margin: 0;
+  }
+
+  .main-nav {
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .main-nav--item {
+    background-color: transparent;
+  }
+}
+
+
 
 /* Desktop */
+@media screen and (min-width: 64em) {
+  .site {
+    align-items: center;
+  }
+
+  .site-header,
+  .profile-banner,
+  .main-content > section,
+  .main-footer > section {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .student-name,
+  .main-nav--item {
+    line-height: 1;
+  }
+
+  .student-name {
+    padding: 1em;
+  }
+
+  .main-nav {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main-nav--item {
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+  }
+}
