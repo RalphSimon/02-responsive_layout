@@ -59,19 +59,21 @@
     width: 100%;
   }
 
-  /***** Profile Banner *****/
+  /***** Latest Work *****/
   .latest-work--list {
     -webkit-flex-direction: row;
 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 
   .latest-work--item {
     flex: 0 1 48%;
   }
 
+  /***** Main Footer *****/
   .main-footer {
     padding-bottom: 4em;
   }
@@ -160,7 +162,7 @@
     width: 39%;
   }
 
-  /***** Profile Banner *****/
+  /***** Latest Work *****/
   .latest-work--item {
     flex: 0 1 32%;
   }
