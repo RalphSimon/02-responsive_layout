@@ -48,7 +48,7 @@
   -webkit-flex: 1;
   flex: 1;
   width: 100%;
-  /*padding: 0 1em;*/
+  /*margin-bottom: 4em;*/
 }
 
 button,
@@ -254,9 +254,9 @@ button:hover,
   MEDIA QUERIES
   ---
   Break points:
-  320px
-  768px
-  1024px
+  mobile: 320px
+  tablet: 768px
+  desktop: 1024px
 
 ******************/
 

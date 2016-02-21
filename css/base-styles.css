@@ -60,7 +60,7 @@ a:active {
   font-size: 1.25em;
   text-transform: uppercase;
   text-align: center;
-  margin: 2.5em auto;
+  margin: 2.5em auto 1em auto;
 }
 
 /* Icons */
