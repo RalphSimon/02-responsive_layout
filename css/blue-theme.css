@@ -57,6 +57,21 @@ a:hover {
   text-decoration: none;
 }
 
+.subheading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+/***** UTILITIES *****/
+
+/* Used to make elements invisible */
+.offset {
+  position: absolute;
+  top: -10000px;
+}
+
+
 /******************
 
   COMPONENTS & LAYOUT
@@ -65,6 +80,7 @@ a:hover {
   # Primary content wrappers:
   .site (<body>)
   .site-header
+  .profile-banner
   .main-content
   .main-footer
 
@@ -73,7 +89,9 @@ a:hover {
 /***** Flexbox contexts for primary content wrappers *****/
 .site
 .site-header,
+.profile-banner,
 .main-content,
+.portfolio__list,
 .main-footer {
   display: -webkit-flex;
   display: flex;
@@ -81,6 +99,7 @@ a:hover {
 
 .site,
 .site-header,
+.portfolio__list,
 .main-content {
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -98,11 +117,128 @@ a:hover {
   top: 0;
   min-height: 50px;
   width: 100%;
-  border-bottom: 1px solid #FFFFFF;
+  background-color: rgba(0, 116, 217,1);
 }
 
 .student-name {
+  display: inline-block;
+  margin: 0 auto 1.125em auto;
   text-align: center;
+}
+
+.main-nav {
+  display: none;
+}
+
+.popup__container {
+  padding: 1em;
+}
+
+.popup__container > label,
+.popup__nav > label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 0.875em;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.popup__container > label {
+  border: 1px solid #FFFFFF;
+}
+
+.popup__nav > label {
+  color: inherit;
+  border: 1px solid #0074D9;
+  margin-bottom: 2.125em;
+}
+
+
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  color: #0074D9;
+  z-index: -999;
+}
+
+.popup__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.popup__container > label,
+.popup__nav > label,
+.popup__nav > .main-nav--item {
+  transition: background 0.3s ease-in, color 0.2s ease-out;
+}
+
+.popup__nav > .main-nav--item {
+  font-size: 2.125em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.25em;
+  margin-bottom: 1.25em;
+  border-radius: 3px;
+}
+
+.popup__container > label:hover {
+  background-color: #FFFFFF;
+  color: #0074D9;
+}
+
+.popup__nav > label:hover,
+.popup__nav > .main-nav--item:hover {
+  background-color: #0074D9;
+  color: #FFFFFF;
+}
+
+.popup__overlay {
+  opacity: 0;
+  transform-origin: 50% 0;
+  transform: translateY(-100vh), scale(0.5);
+  transition: all 0.5s ease-out;
+  /*transition-delay: 0.1s, 2s;*/
+}
+
+input:checked ~ .popup__overlay {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 9999;
+}
+
+/***** PROFILE-BANNER *****/
+
+.profile-banner {
+  -webkit-flex-direction: column-revers;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding: 1em;
+  margin-top: 160px;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.profile-image {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.profile-info {
+  font-size: 1.125em;
+  text-align: center;
+  margin: 1.5em auto;
 }
 
 /***** MAIN-CONTENT *****/
@@ -110,5 +246,43 @@ a:hover {
   -webkit-flex: 1;
   flex: 1;
   width: 100%;
-  margin-top: 100px;
+}
+
+.main-content > section {
+  width: 100%;
+  padding: 0 1em;
+}
+
+/***** LATEST WORK *****/
+.latest-work {
+  overflow: hidden;
+}
+
+.portfolio__list {
+  width: 100%;
+}
+
+.portfolio__item {
+  position: relative;
+  z-index: -1;
+  -webkit-flex: 1;
+  margin-bottom: 1.25em;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  color: rgba(0,0,0,0.87);
+}
+
+.portfolio__image {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.portfolio__caption {
+  padding: 0.75em;
+}
+
+.portfolio__caption > .title {
+  text-align: center;
 }

@@ -72,7 +72,7 @@ a:active {
 .main-nav,
 .profile-banner,
 .main-content,
-.latest-work--list,
+.portfolio__list,
 .contact > span,
 .main-footer {
   display: -webkit-flex;
@@ -186,7 +186,7 @@ button:hover,
   background-color: #fff;
 }
 
-.latest-work--list {
+.portfolio__list {
   -webkit-flex-direction: column;
   flex-direction: column;
   padding: 0 1em;
@@ -196,27 +196,27 @@ button:hover,
   padding: 0 1em;
 }*/
 
-.portfolio-item {
+.portfolio__item {
   width: 100%;
   margin-bottom: 4em;
 }
 
-.portfolio-image {
+.portfolio__image {
   width: 100%;
 }
 
-.portfolio-caption {
+.portfolio__caption {
   padding: 0.625em 0.625em 0 0.625em;
 }
 
-.portfolio-caption > .title {
+.portfolio__caption > .title {
   font-size: 1.125em;
   font-weight: 400;
   text-align: center;
   margin: 0;
 }
 
-.portfolio-caption > .description {
+.portfolio__caption > .description {
   font-size: 1em;
   text-align: center;
 }
@@ -375,7 +375,7 @@ button:hover,
   }
 
   /***** Latest Work *****/
-  .latest-work--list {
+  .portfolio__list {
     -webkit-flex-direction: row;
 
     flex-direction: row;
@@ -384,7 +384,7 @@ button:hover,
     padding: 0;
   }
 
-  .portfolio-item {
+  .portfolio__item {
     flex: 0 1 48%;
   }
 
@@ -483,7 +483,7 @@ button:hover,
   }
 
   /***** Latest Work *****/
-  .portfolio-item {
+  .portfolio__item {
     flex: 0 1 32%;
   }
 }
