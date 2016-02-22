@@ -93,7 +93,7 @@ a:hover {
 .profile-banner,
 .main-content,
 .portfolio__list,
-.contact
+.contact,
 .main-footer {
   display: -webkit-flex;
   display: flex;
@@ -223,7 +223,6 @@ input:checked ~ .popup__overlay {
 }
 
 /***** PROFILE-BANNER *****/
-
 .profile-banner {
   -webkit-flex-direction: column-revers;
   flex-direction: column-reverse;
@@ -260,23 +259,26 @@ input:checked ~ .popup__overlay {
 
 .main-content > section {
   width: 100%;
-  padding: 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /***** LATEST WORK *****/
 .latest-work {
   overflow: hidden;
   background-color: #7FDBFF;
+  padding-bottom: 3.725em;
 }
 
 .portfolio__list {
+  flex: 1;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .portfolio__item {
   position: relative;
   -webkit-flex: 1;
-  flex: 1;
   margin-bottom: 1.25em;
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -311,7 +313,8 @@ input:checked ~ .popup__overlay {
 .contact {
   width: 100%;
   max-width: 400px;
-  margin: auto;
+  padding-top: 3.725em;
+  margin: 0 auto 2.125em auto;
 }
 
 .contact > span {
@@ -328,7 +331,7 @@ input:checked ~ .popup__overlay {
 }
 
 .contact > span .material-icons {
-  margin-right: 0.75em;
+  margin-right: 0.25em;
 }
 
 .contact-link,
@@ -354,6 +357,8 @@ input:checked ~ .popup__overlay {
   display: block;
   appearance: none;
   text-transform: uppercase;
+  word-spacing: 0.2em;
+  letter-spacing: 1px;
   font-weight: 400;
   padding: 0.75em;
   border: 1px solid #FFFFFF;
@@ -369,4 +374,18 @@ input:checked ~ .popup__overlay {
   border-color:#001F3F;
   background-color: #FFFFFF;
   color: #001F3F;
+}
+
+
+/***** MAIN FOOTER *****/
+.main-footer {
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  margin: 0 auto;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-nav {
+  display: none;
 }
