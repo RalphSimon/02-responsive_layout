@@ -60,7 +60,8 @@ a:hover {
 .subheading {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1.25em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /***** UTILITIES *****/
@@ -92,6 +93,7 @@ a:hover {
 .profile-banner,
 .main-content,
 .portfolio__list,
+.contact
 .main-footer {
   display: -webkit-flex;
   display: flex;
@@ -100,6 +102,7 @@ a:hover {
 .site,
 .site-header,
 .portfolio__list,
+.contact,
 .main-content {
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -109,11 +112,13 @@ a:hover {
 .site {
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 /***** SITE-HEADER *****/
 .site-header {
   position: fixed;
+  z-index: 10;
   top: 0;
   min-height: 50px;
   width: 100%;
@@ -158,6 +163,7 @@ a:hover {
 
 
 .popup__overlay {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -187,7 +193,7 @@ a:hover {
   text-align: center;
   padding: 0.25em;
   margin-bottom: 1.25em;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .popup__container > label:hover {
@@ -210,6 +216,7 @@ a:hover {
 }
 
 input:checked ~ .popup__overlay {
+  display: block;
   opacity: 1;
   transform: translateY(0);
   z-index: 9999;
@@ -222,11 +229,14 @@ input:checked ~ .popup__overlay {
   flex-direction: column-reverse;
   width: 100%;
   padding: 1em;
-  margin-top: 160px;
+  margin-top: 165px;
 }
 
-.image-container {
+.profile-banner > .image-container {
   width: 100%;
+  background-color: rgba(255,133,27,1);
+  padding: 0.75em;
+  border-radius: 5px;
 }
 
 .profile-image {
@@ -256,6 +266,7 @@ input:checked ~ .popup__overlay {
 /***** LATEST WORK *****/
 .latest-work {
   overflow: hidden;
+  background-color: #7FDBFF;
 }
 
 .portfolio__list {
@@ -264,19 +275,28 @@ input:checked ~ .popup__overlay {
 
 .portfolio__item {
   position: relative;
-  z-index: -1;
   -webkit-flex: 1;
+  flex: 1;
   margin-bottom: 1.25em;
   background-color: #FFFFFF;
-  border-radius: 3px;
+  border-radius: 5px;
   color: rgba(0,0,0,0.87);
+}
+
+.portfolio__item > .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-height: 220px;
+  padding: 0.75em;
 }
 
 .portfolio__image {
   display: block;
   width: 100%;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-radius: 5px;
 }
 
 .portfolio__caption {
@@ -285,4 +305,68 @@ input:checked ~ .popup__overlay {
 
 .portfolio__caption > .title {
   text-align: center;
+}
+
+/***** CONTACT SECTION *****/
+.contact {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em;
+}
+
+.contact-info,
+.contact > span {
+  font-size: 1.125em;
+  text-align: center;
+}
+
+.contact > span .material-icons {
+  margin-right: 0.75em;
+}
+
+.contact-link,
+.contact-link:link,
+.contact-link:visited,
+.back-to-top,
+.back-to-top:link,
+.back-to-top:visited {
+  display: inline-block;
+  font-weight: 900;
+  transition: color 0.4s;
+  margin-left: 1.25em;
+}
+
+.contact > span:hover .contact-link,
+.contact > span:hover .material-icons,
+.back-to-top:hover {
+  color: #001F3F;
+  transition: color 0.3s;
+}
+
+.contact > .button {
+  display: block;
+  appearance: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.75em;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: transparent;
+  margin: 1.75em auto;
+  transition-property: border, color, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.contact > .button:hover {
+  border-color:#001F3F;
+  background-color: #FFFFFF;
+  color: #001F3F;
 }
