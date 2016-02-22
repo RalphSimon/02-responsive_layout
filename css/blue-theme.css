@@ -409,6 +409,13 @@ input:checked ~ .popup__overlay {
 
 /***** TABLET *****/
 @media only screen and (min-width: 48em) {
+  /***** SITE-HEADER > MAIN-NAV *****/
+  .profile-banner,
+  .main-content > section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
   .popup__container {
     display: none;
   }
@@ -457,6 +464,24 @@ input:checked ~ .popup__overlay {
   .main-nav > .main-nav--item.active {
     background-color: #FFFFFF;
     color: #0074D9;
+  }
+
+  /***** PROFILE-BANNER *****/
+  .profile-banner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4.5em 2em;
+  }
+
+  .profile-info {
+    flex: 0 0 56%;
+    font-size: 1.25em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .profile-banner > .image-container {
+    flex: 0 0 39%;
   }
 }
 
