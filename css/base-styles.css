@@ -29,47 +29,6 @@ html {
   box-sizing: inherit;
 }
 
-/* Typography */
-
-body {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-p {
-  font-size: 0.875em;
-}
-
-a {
-  color: rgba(0, 0, 0, 0.87);;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.4s;
-}
-
-a:hover,
-a:active {
-  color: rgba(0, 0, 0, 0.54);
-  transition: color 0.3s;
-}
-
-.subheading {
-  font-size: 1.25em;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 2.5em auto 1em auto;
-}
-
-/* Icons */
-.material-icons {
-  vertical-align: middle;
-  margin-right: 0.25em;
-}
-
-
 /* Buttons */
 
 /* Lists */
