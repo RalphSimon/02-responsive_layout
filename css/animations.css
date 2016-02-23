@@ -1,0 +1,212 @@
+/***********************
+
+  KEYFRAMES
+
+***********************/
+
+@keyframes blink {
+  0% {
+    transform: translate(89px, 116px);
+  }
+  40% {
+    transform: scale(0.8, 0.3);
+  }
+  70% {
+    transform: scale(0.9, 0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  70% {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-Y {
+  40% {
+    transform: scaleY(0.75);
+  }
+  60% {
+    transform: scaleY(1.05);
+  }
+  80% {
+    transform: scaleY(0.95);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drop-in {
+  60% {
+    opacity: 0.3;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
+@keyframes fly-in {
+  0% {
+    opacity: 0;
+    transform: translate(150px, 50px);
+  }
+  60% {
+    opacity: 0.3;
+    transform: translate(75px, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(59px, 25px);
+  }
+}
+
+@keyframes jump-in {
+  75% {
+    transform: translate(60px, 130px);
+  }
+  100% {
+    transform: translate(60px, 120px);
+  }
+}
+
+@keyframes opacify {
+  40% {
+    opacity: 0.3;
+    /*transform: scale(2.4);*/
+  }
+  70% {
+    opacity: 0.6;
+    /*transform: scale(1.7);*/
+  }
+  100% {
+    opacity: 1;
+    /*transform: scale(1);*/
+  }
+}
+
+@keyframes ufo {
+  0% {
+    transform: translate(-200%, -300%);
+  }
+  30% {
+    opacity: 0.3;
+    transform: scale(0.3) translate(200%, 300%);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scale(0.6) translate(-100%, -150%);
+  }
+  90% {
+    opacity: 0.9;
+    transform: scale(0.9) translate(50%, 75%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0,0);
+  }
+}
+
+/***********************
+
+  SVG
+
+***********************/
+
+/*svg.profile-image * {
+  transform-origin: 50% 50%;
+}*/
+.background-circle {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  animation: ufo 2s ease-in-out forwards;
+}
+
+.shirt {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  fill: #B10DC9;
+  animation: pop 1.5s 2.3s ease-in-out forwards;
+}
+
+#Neck {
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  animation: grow-Y 1s 2.6s linear forwards;
+}
+
+#Face {
+  opacity: 0;
+  transform: translateY(-200%);
+  animation: drop-in 0.8s 3s ease-in-out forwards;
+}
+
+#Hair {
+  opacity: 0;
+  animation: fly-in 1.2s 3.5s ease-out forwards;
+}
+
+#Mouth {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: grow 1.3s 2.3s ease-in forwards;
+}
+
+.beard {
+  transform-origin: 50% 50%;
+  transform: translate(60px, 300px);
+  animation: jump-in 0.9s 2.5s ease-out forwards;
+}
+
+#Eyes {
+  transform-origin: 50% 50%;
+  transform: translate(90px, 116px);
+  /*animation: grow-Y 0.8s 2.8s ease-in forwards;*/
+}
+
+.glasses {
+  opacity: 0;
+  transform-origin: 15% 0%;
+  transform: translate(80px, 105px);
+  animation: opacify 0.7s 2.8s ease-in forwards;
+}

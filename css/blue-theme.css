@@ -125,7 +125,7 @@ a:hover {
   top: 0;
   min-height: 50px;
   width: 100%;
-  background-color: rgba(0, 116, 217,0.87);
+  background-color: rgba(0, 116, 217,1);
 }
 
 .student-name {
@@ -186,7 +186,7 @@ a:hover {
 .popup__container > label,
 .popup__nav > label,
 .popup__nav > .main-nav--item {
-  transition: background 0.3s ease-in, color 0.2s ease-out;
+  transition: background 0.3s ease-in, color 0.2s 0.2s ease-out;
 }
 
 .popup__nav > .main-nav--item {
@@ -214,15 +214,16 @@ a:hover {
 .popup__overlay {
   opacity: 0;
   transform-origin: 50% 0;
-  transform: translateY(-100vh), scale(0.5);
-  transition: all 0.5s ease-out;
+  transform: translate(0, -100vh);
+  transition: opacity 5.5s ease;
+  /*, scale(0.5)*/
   /*transition-delay: 0.1s, 2s;*/
 }
 
 input:checked ~ .popup__overlay {
   display: block;
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0, 0);
   z-index: 9999;
 }
 
@@ -231,13 +232,14 @@ input:checked ~ .popup__overlay {
   -webkit-flex-direction: column-revers;
   flex-direction: column-reverse;
   width: 100%;
-  padding: 1em;
+  padding: 2em 1em;
 }
 
 .profile-banner > .image-container {
-  width: 100%;
+  width: 80%;
   background-color: rgba(255,133,27,1);
   padding: 0.75em;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
@@ -250,7 +252,7 @@ input:checked ~ .popup__overlay {
 .profile-info {
   font-size: 1.125em;
   text-align: center;
-  margin: 1.5em auto;
+  margin: 2em auto 1.5em auto;
 }
 
 /***** MAIN-CONTENT *****/
@@ -294,7 +296,7 @@ input:checked ~ .popup__overlay {
   align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  min-height: 220px;
+  /*min-height: 220px;*/
   padding: 0.75em;
 }
 
@@ -432,7 +434,7 @@ input:checked ~ .popup__overlay {
   .site-header__container {
     display: flex;
     flex-direction: column;
-    max-width: 39%;
+    min-width: 39%;
     padding-bottom: 1.125em;
   }
 
@@ -483,6 +485,26 @@ input:checked ~ .popup__overlay {
   .profile-banner > .image-container {
     flex: 0 0 39%;
   }
+
+  /***** LATEST WORK *****/
+  .portfolio__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio__item {
+    flex: 0 1 48%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .portfolio__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px 0px rgba(0,0,0,0.4),
+                0 2px 24px 0px rgba(0,0,0,0.3),
+                0 4px 48px 0px rgba(0,0,0,0.1);
+    z-index: 5;
+  }
 }
 
 
@@ -498,6 +520,7 @@ input:checked ~ .popup__overlay {
     max-width: 64em;
   }
 
+  /***** SITE HEADER + MAIN NAV *****/
   .site-header__container {
     flex-direction: row;
     justify-content: space-between;;
@@ -505,9 +528,6 @@ input:checked ~ .popup__overlay {
     max-width: 64em;
     margin: 0 auto;
     padding-bottom: 0;
-    /* Testing purposes */
-    border-left: 1px solid #FFF;
-    border-right: 1px solid #fff;
   }
 
   .student-name {
@@ -518,4 +538,26 @@ input:checked ~ .popup__overlay {
   .main-nav {
     width: 39%;
   }
+
+  /***** PROFILE BANNER *****/
+  .profile-banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /***** LATEST WORK *****/
+  .latest-work {
+    border-radius: 5px;
+  }
+
+  /*.portfolio__list {
+    width: 100%;
+    justify-content: space-between;
+  }*/
+
+  .portfolio__item {
+    flex: 0 0 30%;
+    margin-bottom: 5%;
+  }
+
 }
