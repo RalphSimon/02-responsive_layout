@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base-styles.css">
-    <link rel="stylesheet" href="css/blue-theme.css">
+    <link rel="stylesheet" href="css/default-theme.css">
     <link rel="stylesheet" href="css/animations.css">
     <!-- <link rel="stylesheet" href="css/media-queries.css"> -->
 
@@ -18,28 +18,14 @@
 
   <body class="site">
     <header class="site-header">
-      <div class="popup__container">
-        <input id="popup__trigger" class="offset" type="checkbox">
-        <label for="popup__trigger">Menu</label>
-        <div class="popup__overlay">
-          <nav class="popup__nav">
-            <label for="popup__trigger">Close</label>
-
-            <a href="#" class="main-nav--item">Home</a>
-            <a href="portfolio.html" class="main-nav--item">Portfolio</a>
-            <a href="light-theme.html" class="main-nav--item">Light Theme</a>
-          </nav>
-        </div>
-      </div>
-
-      <div class="site-header__container">
+      <!-- <div class="site-header__container"> -->
         <h1 class="student-name">Ralph Simon</h1>
         <nav class="main-nav">
-          <a href="#" class="main-nav--item active">Home</a>
+          <a href="index.html" class="main-nav--item active">Home</a>
           <a href="portfolio.html" class="main-nav--item">Portfolio</a>
-          <a href="light-theme.html" class="main-nav--item">Light Theme</a>
+          <a href="#" class="main-nav--item">Light Theme</a>
         </nav>
-      </div>
+      <!-- </div> -->
     </header>
 
     <section class="profile-banner">
@@ -136,7 +122,7 @@
         <h2 class="subheading">My latest work</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <div class="image-container">
+
               <img
                 srcset="assets/images/portfolio-1-mobile.png 400w,
                         assets/images/portfolio-1-tablet.png 800w,
@@ -144,7 +130,7 @@
                 src="assets/images/portfolio-1-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Bakery Project</h3>
               <p class="description">For a local bakery I developed a nice little website with the option to browse bread based recipes.</p>
@@ -152,7 +138,7 @@
           </li>
 
           <li class="portfolio__item">
-            <div class="image-container">
+
               <img
                 srcset="assets/images/portfolio-2-mobile.png 400w,
                         assets/images/portfolio-2-tablet.png 800w,
@@ -160,7 +146,7 @@
                 src="assets/images/portfolio-2-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Search Page</h3>
               <p class="description">For a large web portal I've build a customized search page with extensive filter options.</p>
@@ -168,7 +154,7 @@
           </li>
 
           <li class="portfolio__item">
-            <div class="image-container">
+
               <img
               srcset="assets/images/portfolio-3-mobile.png 400w,
                       assets/images/portfolio-3-tablet.png 800w,
@@ -176,7 +162,7 @@
                 src="assets/images/portfolio-3-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Travel App</h3>
               <p class="description">This app compares travel times based on different transportation methods and shows you the best option.</p>
@@ -185,7 +171,7 @@
 
           <li class="portfolio__item">
           </div>
-            <div class="image-container">
+
               <img
                 srcset="assets/images/portfolio-4-mobile.png 400w,
                         assets/images/portfolio-4-tablet.png 800w,
@@ -193,7 +179,7 @@
                 src="assets/images/portfolio-4-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Currency Calculater</h3>
               <p class="description">This app is an example currency calculator</p>
@@ -202,7 +188,7 @@
           </li>
 
           <li class="portfolio__item">
-            <div class="image-container">
+
               <img
                 srcset="assets/images/portfolio-5-mobile.png 400w,
                         assets/images/portfolio-5-tablet.png 800w,
@@ -210,7 +196,7 @@
                 src="assets/images/portfolio-5-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Image Gallery</h3>
               <p class="description">For a local news organization I've build a filterable photo gallery</p>
@@ -218,14 +204,14 @@
           </li>
 
           <li class="portfolio__item">
-            <div class="image-container">
+
               <img
                 srcset="assets/images/portfolio-6-mobile.png 400w,
                         assets/images/portfolio-6-tablet.png 800w,
                         assets/images/portfolio-6-desktop.png 1280w"
                 src="assets/images/portfolio-6-mobile.png"
                 alt="A sample image" class="portfolio__image">
-              </div>
+
             <div class="portfolio__caption">
               <h3 class="title">Run Run App</h3>
               <p class="description">With the help of some cool mapping APIs I've build my very own running app.</p>
@@ -252,9 +238,9 @@
 
         <!-- Hidden on mobile -->
         <ul class="footer-nav">
-          <li class="footer-nav--item"><a href="#" class="">Home</a></li>
+          <li class="footer-nav--item"><a href="index.html" class="">Home</a></li>
           <li class="footer-nav--item"><a href="portfolio.html" class="">Portfolio</a></li>
-          <li class="footer-nav--item"><a href="light-theme.html" class="">contact</a></li>
+          <li class="footer-nav--item"><a href="#" class="">Light Theme</a></li>
         </ul>
     </footer>
   </body>
