@@ -60,6 +60,8 @@ a:hover {
 .subheading {
   text-transform: uppercase;
   text-align: center;
+  word-spacing: 0.25em;
+  line-height: 1;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -166,7 +168,7 @@ a:hover {
 
 
 .popup__overlay {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -174,7 +176,12 @@ a:hover {
   left: 0;
   background-color: #FFFFFF;
   color: #0074D9;
-  z-index: -999;
+  z-index: -900;
+
+  opacity: 0;
+  transform-origin: 50% 0;
+  transform: translate(0, -100vh);
+  transition: all 0.8s ease-out;
 }
 
 .popup__nav {
@@ -211,20 +218,12 @@ a:hover {
   color: #FFFFFF;
 }
 
-.popup__overlay {
-  opacity: 0;
-  transform-origin: 50% 0;
-  transform: translate(0, -100vh);
-  transition: opacity 5.5s ease;
-  /*, scale(0.5)*/
-  /*transition-delay: 0.1s, 2s;*/
-}
 
 input:checked ~ .popup__overlay {
   display: block;
   opacity: 1;
   transform: translate(0, 0);
-  z-index: 9999;
+  z-index: 900;
 }
 
 /***** PROFILE-BANNER *****/
