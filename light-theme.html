@@ -17,23 +17,37 @@
 
   <body class="site">
     <header class="site-header">
-      <!-- <div class="site-header__container"> -->
+      <div class="popup__container">
+        <input id="popup__trigger" class="offset" type="checkbox">
+        <label for="popup__trigger">Menu</label>
+        <div class="popup__overlay">
+          <nav class="popup__nav">
+            <label for="popup__trigger">Close</label>
+
+            <a href="#" class="main-nav--item">Home</a>
+            <a href="portfolio.html" class="main-nav--item">Portfolio</a>
+            <a href="light-theme.html" class="main-nav--item">Light Theme</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="site-header__container">
         <h1 class="student-name">Ralph Simon</h1>
         <nav class="main-nav">
-          <a href="index.html" class="main-nav--item active">Home</a>
+          <a href="#" class="main-nav--item active">Home</a>
           <a href="portfolio.html" class="main-nav--item">Portfolio</a>
-          <a href="#" class="main-nav--item">Light Theme</a>
+          <a href="light-theme.html" class="main-nav--item">Light Theme</a>
         </nav>
-      <!-- </div> -->
+      </div>
     </header>
 
-    <section class="profile-banner">
+    <aside class="profile-banner">
       <p class="profile-info">Hey there! Welcome to my portfolio site. I just finished the TreeHouse Techdegree and here you'll find the results of all my hard work. I love developing for the web and I can't wait to put everything I've learned to good use!</p>
 
       <div class="image-container">
         <!-- <img src="assets/images/profile-image.svg" alt="An image of the developer of this page" class="profile-image"> -->
 
-        <svg class="profile-image" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+        <svg class="profile-image" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
             <title>Profile Image</title>
             <desc>Created with Sketch.</desc>
@@ -62,7 +76,7 @@
                 </filter>
             </defs>
 
-            <g id="256">
+            <g id="Avatar">
                 <circle class="background-circle" fill="#7FDBFF" cx="128" cy="128" r="128"></circle>
 
                 <!-- SHIRT -->
@@ -88,7 +102,7 @@
                 <g id="Eyes" fill="#5D3918">
                     <path d="M67.5,5.60068936 C71.7179156,5.60068936 80,7.44345604 80,7.44345604 C80,7.44345604 80.0000001,1.22148125 67.5,0.102036395 C54.9999999,-1.01740846 55,7.44345604 55,7.44345604 C55,7.44345604 63.3845822,5.60068936 67.5,5.60068936 Z" id="Left-Eye"></path>
 
-                    <path d="M12.5,5.60068936 C16.7179156,5.60068936 25,7.44345604 25,7.44345604 C25,7.44345604 25.0000001,1.22148125 12.5,0.102036395 C-5.3185901e-08,-1.01740846 0,7.44345604 0,7.44345604 C0,7.44345604 8.38458223,5.60068936 12.5,5.60068936 Z" id="Right-Eye" sketch:type="MSShapeGroup" transform="translate(12.500000, 3.721728) scale(-1, 1) translate(-12.500000, -3.721728) "></path>
+                    <path d="M12.5,5.60068936 C16.7179156,5.60068936 25,7.44345604 25,7.44345604 C25,7.44345604 25.0000001,1.22148125 12.5,0.102036395 C-5.3185901e-08,-1.01740846 0,7.44345604 0,7.44345604 C0,7.44345604 8.38458223,5.60068936 12.5,5.60068936 Z" id="Right-Eye" transform="translate(12.500000, 3.721728) scale(-1, 1) translate(-12.500000, -3.721728) "></path>
                 </g>
 
                 <!-- BEARD -->
@@ -114,22 +128,23 @@
         </svg>
 
       </div>
-    </section>
+    </aside>
 
     <main class="main-content">
       <section class="latest-work">
         <h2 class="subheading">My latest work</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-
+            <div class="image-container">
               <img
+                sizes="(min-width: 768px) 800px, 400px"
                 srcset="assets/images/portfolio-1-mobile.png 400w,
                         assets/images/portfolio-1-tablet.png 800w,
                         assets/images/portfolio-1-desktop.png 1280w"
                 src="assets/images/portfolio-1-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Bakery Project</h3>
               <p class="description">For a local bakery I developed a nice little website with the option to browse bread based recipes.</p>
@@ -137,15 +152,16 @@
           </li>
 
           <li class="portfolio__item">
-
+            <div class="image-container">
               <img
+                sizes="(min-width: 768px) 800px, 400px"
                 srcset="assets/images/portfolio-2-mobile.png 400w,
                         assets/images/portfolio-2-tablet.png 800w,
                         assets/images/portfolio-2-desktop.png 1280w"
                 src="assets/images/portfolio-2-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Search Page</h3>
               <p class="description">For a large web portal I've build a customized search page with extensive filter options.</p>
@@ -153,15 +169,16 @@
           </li>
 
           <li class="portfolio__item">
-
+            <div class="image-container">
               <img
-              srcset="assets/images/portfolio-3-mobile.png 400w,
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-3-mobile.png 400w,
                       assets/images/portfolio-3-tablet.png 800w,
                       assets/images/portfolio-3-desktop.png 1280w"
                 src="assets/images/portfolio-3-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Travel App</h3>
               <p class="description">This app compares travel times based on different transportation methods and shows you the best option.</p>
@@ -169,16 +186,16 @@
           </li>
 
           <li class="portfolio__item">
-          </div>
-
+            <div class="image-container">
               <img
+                sizes="(min-width: 768px) 800px, 400px"
                 srcset="assets/images/portfolio-4-mobile.png 400w,
                         assets/images/portfolio-4-tablet.png 800w,
                         assets/images/portfolio-4-desktop.png 1280w"
                 src="assets/images/portfolio-4-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Currency Calculater</h3>
               <p class="description">This app is an example currency calculator</p>
@@ -187,15 +204,16 @@
           </li>
 
           <li class="portfolio__item">
-
+            <div class="image-container">
               <img
+                sizes="(min-width: 768px) 800px, 400px"
                 srcset="assets/images/portfolio-5-mobile.png 400w,
                         assets/images/portfolio-5-tablet.png 800w,
                         assets/images/portfolio-5-desktop.png 1280w"
                 src="assets/images/portfolio-5-mobile.png"
                 alt="A sample image"
                 class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Image Gallery</h3>
               <p class="description">For a local news organization I've build a filterable photo gallery</p>
@@ -203,14 +221,15 @@
           </li>
 
           <li class="portfolio__item">
-
+            <div class="image-container">
               <img
+                sizes="(min-width: 768px) 800px, 400px"
                 srcset="assets/images/portfolio-6-mobile.png 400w,
                         assets/images/portfolio-6-tablet.png 800w,
                         assets/images/portfolio-6-desktop.png 1280w"
                 src="assets/images/portfolio-6-mobile.png"
                 alt="A sample image" class="portfolio__image">
-
+              </div>
             <div class="portfolio__caption">
               <h3 class="title">Run Run App</h3>
               <p class="description">With the help of some cool mapping APIs I've build my very own running app.</p>
@@ -226,7 +245,7 @@
         <span><i class="material-icons">phone</i>Phone: <a href="tel:+11115551234" class="contact-link">+1 (111) 555-1234</a></span>
         <span><i class="material-icons">email</i>Email: <a href="mailto:email@yoursite.com" class="contact-link">email@yoursite.com</a></span>
 
-        <button href="#" class="button">Leave a message!</button>
+        <button class="button">Leave a message!</button>
 
       </section>
     </main>
@@ -237,9 +256,9 @@
 
         <!-- Hidden on mobile -->
         <ul class="footer-nav">
-          <li class="footer-nav--item"><a href="index.html" class="">Home</a></li>
+          <li class="footer-nav--item"><a href="#" class="">Home</a></li>
           <li class="footer-nav--item"><a href="portfolio.html" class="">Portfolio</a></li>
-          <li class="footer-nav--item"><a href="#" class="">Light Theme</a></li>
+          <li class="footer-nav--item"><a href="light-theme.html" class="">Light Theme</a></li>
         </ul>
     </footer>
   </body>

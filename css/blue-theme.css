@@ -66,6 +66,30 @@ a:hover {
   margin-bottom: 1.5em;
 }
 
+/***** BUTTONS *****/
+.button {
+  display: block;
+  appearance: none;
+  text-transform: uppercase;
+  word-spacing: 0.2em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 0.75em;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: transparent;
+  margin: 1.75em auto;
+  transition-property: border, color, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.button:hover {
+  border-color:#AAAAAA;
+  background-color: #FFFFFF;
+  color: #AAAAAA;
+}
+
 /***** UTILITIES *****/
 
 /* Used to make elements invisible */
@@ -354,29 +378,6 @@ input:checked ~ .popup__overlay {
   transition: color 0.3s;
 }
 
-.contact > .button {
-  display: block;
-  appearance: none;
-  text-transform: uppercase;
-  word-spacing: 0.2em;
-  letter-spacing: 1px;
-  font-weight: 400;
-  padding: 0.75em;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
-  background: transparent;
-  margin: 1.75em auto;
-  transition-property: border, color, background;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.contact > .button:hover {
-  border-color:#AAAAAA;
-  background-color: #FFFFFF;
-  color: #AAAAAA;
-}
-
 
 /***** MAIN FOOTER *****/
 .main-footer {
@@ -533,7 +534,7 @@ input:checked ~ .popup__overlay {
   }
 
   .site > *:not(.site-header){
-    with: 100%;
+    width: 100%;
     max-width: 64em;
   }
 
@@ -567,10 +568,6 @@ input:checked ~ .popup__overlay {
     border-radius: 5px;
   }
 
-  /*.portfolio__list {
-    width: 100%;
-    justify-content: space-between;
-  }*/
 
   .portfolio__item {
     flex: 0 0 30%;
