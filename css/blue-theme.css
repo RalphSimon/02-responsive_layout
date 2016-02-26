@@ -338,10 +338,8 @@ input:checked ~ .popup__overlay {
 }
 
 .contact-link,
-.contact-link:link,
 .contact-link:visited,
 .back-to-top,
-.back-to-top:link,
 .back-to-top:visited {
   display: inline-block;
   font-weight: 900;
@@ -352,7 +350,7 @@ input:checked ~ .popup__overlay {
 .contact > span:hover .contact-link,
 .contact > span:hover .material-icons,
 .back-to-top:hover {
-  color: #001F3F;
+  color: #AAAAAA;
   transition: color 0.3s;
 }
 
@@ -374,9 +372,9 @@ input:checked ~ .popup__overlay {
 }
 
 .contact > .button:hover {
-  border-color:#001F3F;
+  border-color:#AAAAAA;
   background-color: #FFFFFF;
-  color: #001F3F;
+  color: #AAAAAA;
 }
 
 
@@ -503,6 +501,26 @@ input:checked ~ .popup__overlay {
                 0 2px 24px 0px rgba(0,0,0,0.3),
                 0 4px 48px 0px rgba(0,0,0,0.1);
     z-index: 5;
+  }
+
+  /***** MAIN FOOTER *****/
+  .back-to-top:link {
+    display: none;
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+  .footer-nav--item {
+    text-transform: uppercase;
+    margin-left: 1em;
+    font-weight: 900;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .footer-nav--item:hover {
+    color: #AAAAAA;
   }
 }
 
