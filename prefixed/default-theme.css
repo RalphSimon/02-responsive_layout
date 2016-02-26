@@ -78,6 +78,8 @@ a:active {
   display: -webkit-flex;
   -webkit-flex-wrap: no-wrap;
 
+  display: -ms-flexbox;
+
   display: flex;
 }
 
@@ -85,7 +87,8 @@ a:active {
 .site-header,
 .main-nav,
 .main-content {
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-flex-direction: column;
 }
 
@@ -98,7 +101,8 @@ a:active {
 
 .main-content {
   -webkit-flex: 1;
-  flex: 1;
+  -ms-flex: 1;
+      flex: 1;
   width: 100%;
   /*margin-bottom: 4em;*/
 }
@@ -153,7 +157,8 @@ button:hover,
 /***** Profile Banner *****/
 .profile-banner {
   -webkit-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
   width: 100%;
   padding: 2em 1em;
 }
@@ -186,7 +191,8 @@ button:hover,
 
 .portfolio__list {
   -webkit-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 0 1em;
 }
 
@@ -196,9 +202,15 @@ button:hover,
 }
 
 .portfolio__item > .image-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio__image {
@@ -231,9 +243,15 @@ button:hover,
 }
 
 .contact > span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 
   font-size: 1.125em;
@@ -270,8 +288,15 @@ button:hover,
   -webkit-justify-content: space-between;
   -webkit-align-items: center;
 
-  justify-content: space-between;
-  align-items: center;
+  -webkit-justify-content: space-between;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
   width: calc(100% - 2em);
   max-width: 1024px;
   margin: 0 auto;
@@ -341,8 +366,14 @@ button:hover,
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
 
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-flex-direction: row;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 50%;
     margin: 0 auto;
   }
@@ -357,7 +388,11 @@ button:hover,
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
 
-    flex-direction: row;
+    -webkit-flex-direction: row;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
     padding-top: 0;
   }
 
@@ -378,14 +413,22 @@ button:hover,
   .portfolio__list {
     -webkit-flex-direction: row;
 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-direction: row;
+
+        flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
   }
 
   .portfolio__item {
-    flex: 0 1 48%;
+    -webkit-flex: 0 1 48%;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
   }
 
   /***** Main Footer *****/
@@ -398,8 +441,12 @@ button:hover,
   }
 
   .footer-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer-nav--item {
@@ -414,7 +461,10 @@ button:hover,
 /* Desktop */
 @media screen and (min-width: 64em) {
   .site {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   .site-header,
@@ -436,9 +486,18 @@ button:hover,
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-flex-direction: row;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     padding-top: 2em;
     margin-bottom: 2.5em;
   }
@@ -452,9 +511,18 @@ button:hover,
     -webkit-flex: 1;
     -webkit-justify-content: space-between;
 
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-flex: 1;
+
+        -ms-flex: 1;
+
+            flex: 1;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     padding: 0;
   }
 
@@ -484,6 +552,8 @@ button:hover,
 
   /***** Latest Work *****/
   .portfolio__item {
-    flex: 0 1 32%;
+    -webkit-flex: 0 1 32%;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
   }
 }

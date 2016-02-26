@@ -5,13 +5,13 @@ var gulp = require("gulp"),
     prefix = require("gulp-autoprefixer");
 
 gulp.task("clean", function () {
-  del(['prefixed', 'css']);
+  del(['prefixed']);
 });
 
-gulp.task('autoprefixer', function () {
+gulp.task('autoprefixer', ['clean'], function () {
   return gulp.src('./css/*.css')
     .pipe(prefix({
-      browsers: ["> 5%"]
+      browsers: ["last 2 versions"]
     }))
     .pipe(gulp.dest('./prefixed'))
 });

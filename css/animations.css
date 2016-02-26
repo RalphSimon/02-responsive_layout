@@ -1,4 +1,4 @@
-/***********************
+ /***********************
 
   KEYFRAMES
 
@@ -143,9 +143,7 @@
 
 ***********************/
 
-/*svg.profile-image * {
-  transform-origin: 50% 50%;
-}*/
+
 .background-circle {
   opacity: 0;
   transform-origin: 50% 50%;
@@ -156,7 +154,6 @@
 .shirt {
   opacity: 0;
   transform-origin: 50% 100%;
-  fill: #B10DC9;
   animation: pop 1.5s 3.3s ease-in-out forwards;
 }
 
