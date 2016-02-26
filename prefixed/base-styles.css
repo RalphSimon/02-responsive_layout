@@ -1,0 +1,48 @@
+/******************
+
+  BASE STYLES
+  The following colors were derived from the mock ups provided for this project. I found names for the colors via the following service: http://www.color-blindness.com/color-name-hue/,
+
+  Colors used:
+  $white: rgb(250,250,250) || #FAFAFA;
+  $white-lilac: rgb(223,222,224) || #DFDEE0;
+  $viking: rgb(61,172,206) || #3DACCE;
+  $tulip-tree: rgb(223,170,55) || #DFAA37;
+  $lochmara: rgb(41,115,168) || #2973A8;
+  $puerto-rico: rgb(69,173,164) || #45ada4;
+  $corn-flower-blue: rgb(84,70,114) || #544672;
+  $fiord: rgb(79,91,106) || #4f5b6a;
+
+  Typographic colors (following Material Design Spec):
+  $base__font: rgba(0,0,0,0.87);
+  $base__secondary: rgba(0,0,0,0.54);
+  $base__disabled: rgba(0,0,0,0.24);
+******************/
+
+/* Universial Styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Buttons */
+
+/* Lists */
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Figures */
+figure {
+  margin: 0;
+}

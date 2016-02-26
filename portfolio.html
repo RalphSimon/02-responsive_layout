@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ralph Simon's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="prefixed/base-styles.css">
+    <link rel="stylesheet" href="prefixed/blue-theme.css">
+
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+
+  <body class="site">
+    <header class="site-header">
+      <div class="popup__container">
+        <input id="popup__trigger" class="offset" type="checkbox">
+        <label for="popup__trigger">Menu</label>
+        <div class="popup__overlay">
+          <nav class="popup__nav">
+            <label for="popup__trigger">Close</label>
+
+            <a href="index.html" class="main-nav--item">Home</a>
+            <a href="#" class="main-nav--item active">Portfolio</a>
+            <a href="about.html" class="main-nav--item">About</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="site-header__container">
+        <h1 class="student-name">Ralph Simon</h1>
+        <nav class="main-nav">
+          <a href="index.html" class="main-nav--item">Home</a>
+          <a href="#" class="main-nav--item active">Portfolio</a>
+          <a href="light-theme.html" class="main-nav--item">Light Theme</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="portfolio">
+        <h2 class="subheading">Portfolio</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-1-mobile.png 400w,
+                        assets/images/portfolio-1-tablet.png 800w,
+                        assets/images/portfolio-1-desktop.png 1280w"
+                src="assets/images/portfolio-1-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Bakery Project</h3>
+              <p class="description">For a local bakery I developed a nice little website with the option to browse bread based recipes.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-2-mobile.png 400w,
+                        assets/images/portfolio-2-tablet.png 800w,
+                        assets/images/portfolio-2-desktop.png 1280w"
+                src="assets/images/portfolio-2-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Search Page</h3>
+              <p class="description">For a large web portal I've build a customized search page with extensive filter options.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-3-mobile.png 400w,
+                      assets/images/portfolio-3-tablet.png 800w,
+                      assets/images/portfolio-3-desktop.png 1280w"
+                src="assets/images/portfolio-3-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Travel App</h3>
+              <p class="description">This app compares travel times based on different transportation methods and shows you the best option.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-4-mobile.png 400w,
+                        assets/images/portfolio-4-tablet.png 800w,
+                        assets/images/portfolio-4-desktop.png 1280w"
+                src="assets/images/portfolio-4-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Currency Calculater</h3>
+              <p class="description">This app is an example currency calculator</p>
+            </div>
+
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-5-mobile.png 400w,
+                        assets/images/portfolio-5-tablet.png 800w,
+                        assets/images/portfolio-5-desktop.png 1280w"
+                src="assets/images/portfolio-5-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Image Gallery</h3>
+              <p class="description">For a local news organization I've build a filterable photo gallery</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-6-mobile.png 400w,
+                        assets/images/portfolio-6-tablet.png 800w,
+                        assets/images/portfolio-6-desktop.png 1280w"
+                src="assets/images/portfolio-6-mobile.png"
+                alt="A sample image" class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Run Run App</h3>
+              <p class="description">With the help of some cool mapping APIs I've build my very own running app.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-7-mobile.png 400w,
+                        assets/images/portfolio-7-tablet.png 800w,
+                        assets/images/portfolio-7-desktop.png 1280w"
+                src="assets/images/portfolio-7-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Documentary Site</h3>
+              <p class="description">An Antwerp based cinematographer requested a custom made video player and a platform to show her documentaries.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-8-mobile.png 400w,
+                        assets/images/portfolio-8-tablet.png 800w,
+                        assets/images/portfolio-8-desktop.png 1280w"
+                src="assets/images/portfolio-8-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Music player</h3>
+              <p class="description">As a personal project I made a web app where one can collect media from streaming services. Users can make personalized playlists of whatever media type they come accross.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-9-mobile.png 400w,
+                      assets/images/portfolio-9-tablet.png 800w,
+                      assets/images/portfolio-9-desktop.png 1280w"
+                src="assets/images/portfolio-9-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Job Listing</h3>
+              <p class="description">A job listing site that lists jobs in web design and development.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-10-mobile.png 400w,
+                        assets/images/portfolio-10-tablet.png 800w,
+                        assets/images/portfolio-10-desktop.png 1280w"
+                src="assets/images/portfolio-10-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Loading Spinners</h3>
+              <p class="description">A curated site with loading spinners.</p>
+            </div>
+
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-14-mobile.png 400w,
+                        assets/images/portfolio-14-tablet.png 800w,
+                        assets/images/portfolio-14-desktop.png 1280w"
+                src="assets/images/portfolio-14-mobile.png"
+                alt="A sample image"
+                class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Post it workflow project</h3>
+              <p class="description">A site where I write about project setup and workflow and curate resources from around the web.</p>
+            </div>
+          </li>
+
+          <li class="portfolio__item">
+            <div class="image-container">
+              <img
+                sizes="(min-width: 768px) 800px, 400px"
+                srcset="assets/images/portfolio-12-mobile.png 400w,
+                        assets/images/portfolio-12-tablet.png 800w,
+                        assets/images/portfolio-12-desktop.png 1280w"
+                src="assets/images/portfolio-12-mobile.png"
+                alt="A sample image" class="portfolio__image">
+              </div>
+            <div class="portfolio__caption">
+              <h3 class="title">Real Estate Marketing Page</h3>
+              <p class="description">For a local real estate firm I've build a marketing page for one of their latest properties.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+        <h2 class="student-name--footer">Ralph Simon</h2>
+        <a href="#" class="back-to-top">Back to top</a>
+
+        <!-- Hidden on mobile -->
+        <ul class="footer-nav">
+          <li class="footer-nav--item"><a href="index.html" class="">Home</a></li>
+          <li class="footer-nav--item"><a href="#" class="">Portfolio</a></li>
+          <li class="footer-nav--item"><a href="light-theme" class="">Light Theme</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
