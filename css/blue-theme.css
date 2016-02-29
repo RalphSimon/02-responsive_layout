@@ -473,14 +473,14 @@ input:checked ~ .popup__overlay {
   }
 
   .profile-info {
-    flex: 0 0 56%;
+    flex: 0 0 48%;
     font-size: 1.25em;
     text-align: left;
     margin: 0;
   }
 
   .profile-banner > .image-container {
-    flex: 0 0 43%;
+    flex: 0 0 48%;
     margin: 0;
   }
 
@@ -563,6 +563,14 @@ input:checked ~ .popup__overlay {
     padding-right: 0;
   }
 
+  .profile-info {
+    width: 57%;
+  }
+
+  .profil-banner > .image-container {
+    width: 39%;
+  }
+
   /***** LATEST WORK *****/
   .latest-work {
     border-radius: 5px;
@@ -571,7 +579,7 @@ input:checked ~ .popup__overlay {
 
   .portfolio__item {
     flex: 0 0 30%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5em;
   }
 
 }
