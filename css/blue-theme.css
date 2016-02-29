@@ -148,6 +148,7 @@ a:hover {
   position: fixed;
   z-index: 10;
   top: 0;
+  left: 0;
   min-height: 50px;
   width: 100%;
   background-color: rgba(0, 116, 217,1);

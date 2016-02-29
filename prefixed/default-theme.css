@@ -163,7 +163,7 @@ button:hover,
   padding: 2em 1em;
 }
 
-.image-container {
+.profile-banner > .image-container {
   width: 80%;
   padding: 1em 0;
   background-color: rgba(0, 0, 0, 0.24);
@@ -205,9 +205,13 @@ button:hover,
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -397,7 +401,7 @@ button:hover,
   }
 
   .profile-info,
-  .image-container {
+  .profile-banner > .image-container {
     width: 48%;
   }
 
@@ -542,7 +546,7 @@ button:hover,
     width: 57%;
   }
 
-  .image-container {
+  .profile-banner > .image-container {
     width: 39%;
   }
 

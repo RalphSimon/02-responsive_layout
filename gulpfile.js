@@ -8,7 +8,7 @@ gulp.task("clean", function () {
   del(['prefixed']);
 });
 
-gulp.task('autoprefixer', ['clean'], function () {
+gulp.task('prefix', ['clean'], function () {
   return gulp.src('./css/*.css')
     .pipe(prefix({
       browsers: ["last 2 versions"]
