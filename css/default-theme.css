@@ -364,7 +364,7 @@ button:hover,
   }
 
   .profile-info,
-  .image-container {
+  .profile-banner > .image-container {
     width: 48%;
   }
 
@@ -476,7 +476,7 @@ button:hover,
     width: 57%;
   }
 
-  .image-container {
+  .profile-banner > .image-container {
     width: 39%;
   }
 
