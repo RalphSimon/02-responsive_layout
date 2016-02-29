@@ -390,13 +390,11 @@ button:hover,
   /***** Profile Banner *****/
   .profile-banner {
     -webkit-flex-direction: row;
-    -webkit-justify-content: space-between;
-
-    -webkit-flex-direction: row;
-
         -ms-flex-direction: row;
-
             flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 0;
   }
 

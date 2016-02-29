@@ -356,10 +356,8 @@ button:hover,
 
   /***** Profile Banner *****/
   .profile-banner {
-    -webkit-flex-direction: row;
-    -webkit-justify-content: space-between;
-
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 0;
   }
 
