@@ -330,9 +330,7 @@
 
 ***********************/
 
-/*svg.profile-image * {
-  transform-origin: 50% 50%;
-}*/
+
 .background-circle {
   opacity: 0;
   -webkit-transform-origin: 50% 50%;
